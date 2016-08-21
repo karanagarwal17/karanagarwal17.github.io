@@ -1,59 +1,82 @@
 <!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-    <html>
+  <!-- page needs
+  ================================================== -->
+  <meta charset="utf-8">
+	<title>Page title</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-      <head>
-        <title>A developers Diary!</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/main.js"></script>
-      </head>
+  <!-- meta for mobile
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-      <body>
-        <!-- Navigation bar -->
-        <header>
-          <div id="header">
-            <ul>
-              <li class="nav-btn">
-                <a href="#">Home</a>
-              </li>
-              <li class="nav-btn">
-                <a href="blog.html">Blog</a>
-              </li>
-              <li class="nav-btn">
-                <a href="about.html">About Me</a>
-              </li>
-            </ul>
-          </div>
-        </header>
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- script
+  ================================================== -->
+  <script src="js/main.js"></script>
+
+  <!-- favicons
+  ================================================== -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+  <!-- Navigation bar -->
+    <header>
+      <div id="header">
+        <ul>
+          <li class="nav-btn">
+          <a href="#">Home</a>
+          </li>
+          <li class="nav-btn">
+          <a href="#about">About Me</a>
+          </li>
+          <li class="nav-btn">
+          <a href="#skills">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
         <!-- Main Content -->
-        <div id="main_content">
+        <section id="main_content">
           <div>
             <img src="img/main_background.jpg" width="100%" id="main_background">
           </div>
           <div id="myimage">
-            <img src="img/img.jpeg" width = "300px">
+            <img src="img/img.jpeg" width = "230px">
           </div>
-          <div class="desc">
-              Front-End Developer
-          </div><br /><br />
-          <div class="desc">
-              Geek
-          </div><br /><br />
-          <div class="desc">
-              Guitarist
+          <div class="desc_main">
+            <div class="desc">
+                Front-End Developer
+            </div><br />
+            <div class="desc">
+                Geek
+            </div><br />
+            <div class="desc">
+                Guitarist
+            </div>
           </div>
-        </div>
+        </section>
 
         <!-- About -->
-        <div id="about">
+        <section id="about">
           <h2>About</h2>
             Hey i am Karan Agarwal, i am a front-end developer who loves working and learning new things.
-        </div>
+        </section>
 
         <!-- skills -->
-        <div id="skills">
+        <section id="skills">
           <h2>Skills</h2>
           <div id="lang">
             <div id="html">HTML</div><br />
@@ -61,7 +84,7 @@
             <div id="js">JavaScript</div><br />
             <div ="jquery">Jquery</div><br />
           </div>
-        </div>
+        </section>
 
         <!-- Footer -->
         <footer>
