@@ -307,6 +307,10 @@ header {
 /* ABOUT */
 /* ------------------------------------------------------- */
 
+#about {
+  background-color: #efefef;
+}
+
 .myimage {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -342,16 +346,23 @@ header {
 /* ------------------------------------------------------- */
 
 #skills {
-  background-color: #efefef;
+  background-color: #ffffff;
+}
+
+.skills-row {
+  margin-top: 40px;
 }
 
 .circle {
+  display: inline-block;
+  margin-right: 66px;
+  float: left;
   width: 100px;
   height: 100px;
 }
 
 .circle span {
-  display: block;
+  display: inline-block;
   width: 100px;
   text-align: center;
   position: relative;
