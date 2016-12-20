@@ -369,3 +369,39 @@ header {
   top: -50px;
   transform: translate(0,-70%);
 }
+
+/* ------------------------------------------------------- */
+/* PROJECTS */
+/* ------------------------------------------------------- */
+
+#projects {
+  background-color: #eeeeee;
+}
+
+
+/* ------------------------------------------------------- */
+/* CONATCT FORM */
+/* ------------------------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 20px auto 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+*:focus {
+  outline: none;
+}
