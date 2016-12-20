@@ -194,7 +194,7 @@ input[type=submit]:active {
 
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/header-background.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(img/header-background.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -205,7 +205,7 @@ header {
   position: absolute;
   width: 1140px;
   top: 50%;
-  left: 70%;
+  left: 50%;
   transform: translate(-50%,-50%);
 }
 
@@ -242,4 +242,63 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #3498db;
+}
+
+/* SOCIAL LINKS */
+
+.social-links {
+  position: fixed;
+  list-style: none;
+  top: 77%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,0);
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #dddddd;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 260%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-github,
+.ion-social-linkedin {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+  color: #dd4b39;
+}
+
+.ion-social-github:hover {
+  color: #000000;
+}
+
+.ion-social-linkedin:hover {
+  color: #007bb5;
 }
