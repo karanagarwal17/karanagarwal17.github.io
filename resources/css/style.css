@@ -405,3 +405,50 @@ textarea {
 *:focus {
   outline: none;
 }
+
+
+/* ------------------------------------------------------- */
+/* FOOTER */
+/* ------------------------------------------------------- */
+
+footer {
+  background-color: #333;
+  padding: 20px;
+}
+
+.footer-social-links {
+  font-size: 140%;
+  margin-top: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.footer-social-links li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.footer-social-links li:last-child {
+  margin: 0;
+}
+
+.footer-social-links li a:link,
+.footer-social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-social-links li a:link,
+.footer-social-links li a:visited {
+  font-size: 160%;
+}
+
+footer p {
+  font-size: 95%;
+  color: #888;
+  text-align: center;
+  margin-top: 30px;
+}
