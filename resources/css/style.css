@@ -247,7 +247,7 @@ header {
 /* SOCIAL LINKS */
 
 .social-links {
-  position: fixed;
+  position: absolute;
   list-style: none;
   top: 77%;
   left: 50%;
@@ -302,3 +302,7 @@ header {
 .ion-social-linkedin:hover {
   color: #007bb5;
 }
+
+/* ------------------------------------------------------- */
+/* ABOUT */
+/* ------------------------------------------------------- */
