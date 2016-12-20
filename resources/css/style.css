@@ -172,19 +172,19 @@ input[type=submit] {
 
 .btn:hover,
 .btn:active {
-  background-color: #cf6d17;
+  background-color: #1f74ac;
 }
 
 .btn-full:hover,
 .btn-full:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-  background-color: #cf6d17;
+  background-color: #1f74ac;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #cf6d17;
+  border: 1px solid #1f74ac;
   color: #fff;
 }
 
@@ -205,7 +205,7 @@ header {
   position: absolute;
   width: 1140px;
   top: 50%;
-  left: 50%;
+  left: 65%;
   transform: translate(-50%,-50%);
 }
 
@@ -306,3 +306,33 @@ header {
 /* ------------------------------------------------------- */
 /* ABOUT */
 /* ------------------------------------------------------- */
+
+.myimage {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#about h3 {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 150%;
+  text-align: center;
+}
+
+.profile-prop {
+  margin: 25px auto 25px 50px;
+  font-size: 90%;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.resume-button {
+  text-align: center;
+}
