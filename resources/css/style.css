@@ -336,3 +336,25 @@ header {
 .resume-button {
   text-align: center;
 }
+
+/* ------------------------------------------------------- */
+/* SKILLS */
+/* ------------------------------------------------------- */
+
+#skills {
+  background-color: #efefef;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+}
+
+.circle span {
+  display: block;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  transform: translate(0,-70%);
+}
