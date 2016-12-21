@@ -327,6 +327,12 @@ header {
   text-align: center;
 }
 
+#about p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .profile-prop {
   margin: 25px auto 25px 50px;
   font-size: 90%;
