@@ -8,9 +8,10 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
-    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i" rel="stylesheet">
     <Title>Karan Agarwal</Title>
   </head>
 
@@ -143,14 +144,52 @@
       <div class="row">
         <h2>Projects</h2>
       </div>
+      <div class="row">
+        <div class="col span-1-of-2 project-item">
+          <a href="#project-1" class="overlay">
+          <div class="project-item-cover">
+              <img src="resources/img/1.jpg" alt="image 1"/>
+          </div>
+          </a>
+        </div>
+        <div class="col span-1-of-2 project-item">
+          <div class="project-item-cover">
+            <img src="resources/img/1.jpg" alt="image 1"/>
+            <a href="#project-1" class="overlay">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-2 project-item">
+          <div class="project-item-cover">
+            <img src="resources/img/1.jpg" alt="image 1"/>
+            <a href="#project-1" class="overlay">
+            </a>
+          </div>
+        </div>
+        <div class="col span-1-of-2 project-item">
+          <div class="project-item-cover">
+            <img src="resources/img/1.jpg" alt="image 1"/>
+            <a href="#project-1" class="overlay">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contact">
+    <section id="interests">
+      <div class="row">
+        <h2>Interests</h2>
+      </div>
+    </section>
+
+    <section id="contact">
       <div class="row">
         <h2>I'd love to hear from you</h2>
       </div>
       <div class="row">
-        <form method="post" action="#" class="contact-form">
+        <form method="post" action="" class="contact-form" name="contact-form" id="contact-form">
           <div class="row">
             <div class="col span-1-of-3">
               <label for="name">Name</label>
@@ -169,7 +208,7 @@
           </div>
           <div class="row">
             <div class="col span-1-of-3">
-              <label for="email">Subject</label>
+              <label for="subject">Subject</label>
             </div>
             <div class="col span-2-of-3">
               <input type="text" name="subject" id="subject" placeholder="subject" required/>
@@ -177,10 +216,10 @@
           </div>
           <div class="row">
             <div class="col span-1-of-3">
-              <label>Message</label>
+              <label for="message">Message</label>
             </div>
             <div class="col span-2-of-3">
-              <textarea name="message" placeholder="Your message"></textarea>
+              <textarea name="message" placeholder="Your message" id="message"></textarea>
             </div>
           </div>
           <div class="row">
@@ -220,6 +259,7 @@
     <script src="vendors/js/jquery-3.1.0.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="vendors/js/circle-progress.min.js"></script>
+    <script src="vendors/js/magnific-popup.js"></script>
     <script src="resources/js/scripts.js"></script>
   </body>
 
