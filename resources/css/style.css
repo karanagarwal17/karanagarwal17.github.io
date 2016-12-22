@@ -192,22 +192,12 @@ input[type=submit]:active {
 /* HEADER */
 /* ------------------------------------------------------- */
 
-
 header {
   background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(img/header-background.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
-}
-
-.hero-text-box {
-  text-align: center;
-  margin-top: 36vh;
-}
-
-.hero-text-box h3 {
-  color: #dddddd;
 }
 
 /* Main navi */
@@ -240,12 +230,44 @@ header {
   border-bottom: 2px solid #3498db;
 }
 
+/* Sticky navi */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0px;
+  color: #555;
+}
+
+.sticky .main-nav {
+  margin: 18px 0;
+}
+
+/* HERO TEXT */
+
+.hero-text-box {
+  text-align: center;
+  margin-top: 36vh;
+}
+
+.hero-text-box h3 {
+  color: #dddddd;
+}
+
 /* SOCIAL LINKS */
 
 .social-links {
   list-style: none;
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 24vh;
 }
 
 .social-links li {

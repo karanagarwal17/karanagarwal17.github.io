@@ -1,4 +1,17 @@
 $(document).ready(function(){
+
+  /* for sticky navigation */
+  $('.js--section-about').waypoint(function(direction){
+    if (direction == "down"){
+      $('nav').addClass('sticky');
+    }
+    else {
+      $('nav').removeClass('sticky');
+    }
+  },{
+    offset: '60px;'
+  });
+
 /* SKILLS ANIMATION */
 
   $('.lang-c-1').circleProgress({
