@@ -12,4 +12,32 @@
   .projects-item .item-wrap {
     margin: 20px;
   }
+  .myimage {
+    margin: 14% 0 14% 10%;
+  }
+}
+
+/* small tablet to big tablets: from 768 to 1023 px */
+@media only screen and (max-width: 1023px) {
+  body {font-size: 18px;}
+  section {padding: 60px 0;}
+  .hero-text-box {
+    text-align: center;
+  }
+  .row {
+    padding: 0 3%;
+  }
+  #about p {
+    width: 90%;
+  }
+  .myimage {
+    margin: 25% 0 25% 10%;
+  }
+  .circle {
+    margin-right: 15px;
+  }
+  .projects-item .item-wrap .link-icon {
+    left: 31%;
+    margin-left: 0;
+  }
 }

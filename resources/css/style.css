@@ -202,16 +202,12 @@ header {
 }
 
 .hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 250px;
 }
 
 .hero-text-box h3 {
   color: #dddddd;
-  padding-left: 10%;
 }
 
 /* Main navi */
@@ -247,17 +243,18 @@ header {
 /* SOCIAL LINKS */
 
 .social-links {
-  position: absolute;
   list-style: none;
-  top: 77%;
-  left: 50%;
   text-align: center;
-  transform: translate(-50%,0);
+  margin-top: 200px;
 }
 
 .social-links li {
   display: inline-block;
   margin-right: 50px;
+}
+
+.social-links li:last-of-type {
+  margin-right: 0;
 }
 
 .social-links li a:link,
@@ -311,26 +308,32 @@ header {
   background-color: #efefef;
 }
 
-.myimage {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  width: 300px;
-  height: auto;
-  border-radius: 50%;
+#about p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.profile-row {
+  padding: 30px 0;
 }
 
 #about h3 {
   margin-top: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  vertical-align: middle;
   font-weight: 400;
   font-size: 150%;
   text-align: center;
 }
 
-#about p {
+.myimage {
+  margin: 6% 0;
   width: 80%;
-  text-align: center;
-  margin: 0 auto;
+  margin-left: 10%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .profile-prop {
@@ -344,6 +347,7 @@ header {
 }
 
 .resume-button {
+  padding: 20px 0 0 0 ;
   text-align: center;
 }
 
@@ -359,9 +363,14 @@ header {
   margin-top: 40px;
 }
 
+#skills h3 {
+  margin-bottom: 0;
+}
+
 .circle {
   display: inline-block;
-  margin-right: 66px;
+  margin-top: 15px;
+  margin-right: 70px;
   float: left;
   width: 100px;
   height: 100px;
