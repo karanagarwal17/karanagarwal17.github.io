@@ -1,3 +1,4 @@
+$(document).ready(function(){
 /* SKILLS ANIMATION */
 
   $('.lang-c-1').circleProgress({
@@ -82,10 +83,7 @@
     }
   });
 
-  /*----------------------------------------------------*/
 	/*	Modal Popup */
-	/* ------------------------------------------------------*/
-
     $('.item-wrap a').magnificPopup({
        type:'inline',
        fixedContentPos: false,
@@ -98,3 +96,22 @@
     		e.preventDefault();
     		$.magnificPopup.close();
     });
+
+    /* for smooth scrolling */
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+
+
+});
