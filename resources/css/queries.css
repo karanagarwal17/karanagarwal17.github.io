@@ -1,0 +1,15 @@
+
+
+/* big tablet to 1200px (widths smaller than the 1140 px row) */
+@media only screen and (max-width: 1200px) {
+  .row { padding: 0 5%; }
+  .circle {
+    margin-right: 40px;
+  }
+  .projects-item {
+    overflow: hidden;
+  }
+  .projects-item .item-wrap {
+    margin: 20px;
+  }
+}
