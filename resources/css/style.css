@@ -658,11 +658,17 @@ footer p {
 /* FOR ANIMATIONS */
 /* ------------------------------------------------------- */
 
-.js--wp-1{
+.js--wp-1,
+.js--wp-3 {
   opacity: 0;
   animation-duration: 2s;
 }
 
-.js--wp-1.animated {
+.js--wp-1.animated,
+.js--wp-3.animated {
   opacity: 1;
+}
+
+.js--wp-2 {
+  animation-duration: 1s;
 }

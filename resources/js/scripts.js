@@ -192,6 +192,12 @@ $(document).ready(function(){
 offset: '50%'
 });
 
+$('.js--wp-3').waypoint(function(){
+  $('.js--wp-3').addClass('animated fadeIn');
+  }, {
+  offset: '50%'
+});
+
 	/*	Modal Popup */
     $('.item-wrap a').magnificPopup({
        type:'inline',
