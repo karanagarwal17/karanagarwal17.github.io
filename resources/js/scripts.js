@@ -1,5 +1,87 @@
 $(document).ready(function(){
 
+  $('.lang-c-1').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+
+  $('.lang-c-2').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+
+  $('.web-c-1').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+
+  $('.web-c-2').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+
+  $('.fram-c-1').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.fram-c-2').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.lib-c-1').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.lib-c-2').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.lib-c-3').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.data-c-1').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.plat-c-1').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+
   /* for sticky navigation */
   $('.js--section-about').waypoint(function(direction){
     if (direction == "down"){
@@ -12,7 +94,17 @@ $(document).ready(function(){
     offset: '60px;'
   });
 
-/* SKILLS ANIMATION */
+  /* Animations on scroll */
+
+  $('.js--wp-1').waypoint(function(){
+    $('.js--wp-1').addClass('animated fadeIn');
+    }, {
+    offset: '50%'
+  });
+
+  $('.js--wp-2').waypoint(function(){
+
+      /* SKILLS ANIMATION */
 
   $('.lang-c-1').circleProgress({
     value: 0.75,
@@ -95,6 +187,10 @@ $(document).ready(function(){
       gradient: ["#3498db", "#3498db"]
     }
   });
+
+}, {
+offset: '50%'
+});
 
 	/*	Modal Popup */
     $('.item-wrap a').magnificPopup({
