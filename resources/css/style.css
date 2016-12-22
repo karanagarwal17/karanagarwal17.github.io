@@ -203,7 +203,7 @@ header {
 
 .hero-text-box {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 36vh;
 }
 
 .hero-text-box h3 {
@@ -245,7 +245,7 @@ header {
 .social-links {
   list-style: none;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 25vh;
 }
 
 .social-links li {
@@ -320,8 +320,7 @@ header {
 }
 
 #about h3 {
-  margin-top: 35px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   vertical-align: middle;
   font-weight: 400;
   font-size: 150%;
