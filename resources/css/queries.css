@@ -78,6 +78,9 @@
   section {
     padding: 25px 0;
   }
+  .social-links li {
+    margin-right: 25px;
+  }
   .myimage {
     margin: 0 10%;
     width: 60%;

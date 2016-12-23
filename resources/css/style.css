@@ -255,8 +255,12 @@ header {
 /* HERO TEXT */
 
 .hero-text-box {
+  position: absolute;
   text-align: center;
-  margin-top: 36vh;
+  left: 50%;
+  top: 53%;
+  width: 90%;
+  transform: translate(-50%,-50%);
 }
 
 .hero-text-box h3 {
@@ -266,6 +270,11 @@ header {
 /* SOCIAL LINKS */
 
 .social-links {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%,-50%);
   list-style: none;
   text-align: center;
   margin-top: 24vh;
