@@ -229,4 +229,51 @@ $('.js--wp-3').waypoint(function(){
     });
 
 
+
+    	/*----------------------------------------------------*/
+    	/*	contact form
+    	------------------------------------------------------*/
+
+       $('form#contact-form input.submit').on('click', function() {
+
+          $('#image-loader').fadeIn();
+
+          var contactname = $('#contact-form #name').val();
+          var contactEmail = $('#contact-form #email').val();
+          var contactSubject = $('#contact-form #subject').val();
+          var contactMessage = $('#contact-form #message').val();
+
+          var data = 'contactname=' + contactname  +
+                     '&contactEmail=' + contactEmail + '&contactSubject=' + contactSubject +
+                     '&contactMessage=' + contactMessage;
+
+          $.ajax({
+
+    	      type: "POST",
+    	      url: "../form/sendEmail.php",
+    	      data: data,
+    	      success: function(msg) {
+
+                // Message was sent
+                if (msg == 'OK') {
+                   $('#image-loader').fadeOut();
+                   $('#message-warning').hide();
+                   $('#contactForm').fadeOut();
+                   $('#message-success').fadeIn();
+                }
+                // There was an error
+                else {
+                   $('#image-loader').fadeOut();
+                   $('#message-warning').html(msg);
+    	            $('#message-warning').fadeIn();
+                }
+
+    	      }
+
+          });
+          return false;
+       });
+
+
+
 });
