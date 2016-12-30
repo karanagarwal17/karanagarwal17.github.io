@@ -585,7 +585,7 @@ header {
 }
 .popup-modal a:hover {	color: #3498db; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
-
+.popup-modal a.popup-modal-button { margin-left: 24px; }
 
 /* fadein/fadeout effect for modal popup
 /* ------------------------------------------------------------------ */
