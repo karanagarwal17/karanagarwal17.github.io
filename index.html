@@ -27,7 +27,7 @@
      <li><a href="#projects">Projects</a></li>
      <li><a href="http://blog.karanagarwal.me/" target="_blank">Blog</a></li>
      <li><a href="#interests">Interests</a></li>
-     <li><a href="#contact">Contact</a></li>
+     <!--<li><a href="#contact">Contact</a></li>-->
     </ul>
    </div>
   </nav>
@@ -288,15 +288,41 @@
  <section id="interests">
   <div class="row">
    <h2>Interests</h2>
-  </div>
- </section>
+ </div> <!-- Form Submit Script -->
+ <script>
+  function _(id) {
+   return document.getElementById(id);
+  }
 
- <section id="contact">
-  <div class="row">
+  function submitForm() {
+   console.log("This is ok");
+   _("submit-button").disabled = true;
+   //_("status").innerHTML = 'please wait ...';
+   var formdata = new FormData();
+   formdata.append("name", _("name").value);
+   formdata.append("email", _("email").value);
+   formdata.append("subject", _("subject").value);
+   formdata.append("message", _("message").value);
+   var ajax = new XMLHttpRequest();
+   ajax.open("POST", "resources/form/sendEmail.php");
+   ajax.onreadystatechange = function() {
+    if (ajax.readyState == 4 && ajax.status == 200) {
+     if (ajax.responseText == "success") {
+      _("contact-form").innerHTML = '<h2>Thanks ' + _("name").value + ', your message has been sent.</h2>';
+     } else {
+      _("status").innerHTML = ajax.responseText;
+      _("submit-button").disabled = false;
+     }
+    }
+   }
+   ajax.send(formdata);
+  }
+ </script>
+
    <h2>I'd love to hear from you</h2>
   </div>
   <div class="row">
-   <form action="https://formspree.io/karanagarwal1702@gmail.com" method="POST" class="contact-form" name="contact-form" id="contact-form">
+   <form method="POST" class="contact-form" name="contact-form" id="contact-form">
     <div class="row">
      <div class="col span-1-of-3">
       <label for="name">Name</label>
@@ -340,7 +366,7 @@
    </form>
   </div>
  </section>
-
+-->
  <footer>
   <div class="row">
    <ul class="footer-social-links">
@@ -363,7 +389,7 @@
  <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
  <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script <script src="vendors/js/jquery.waypoints.min.js"></script>
+ <script src="vendors/js/jquery.waypoints.min.js"></script>
  <script src="vendors/js/circle-progress.min.js"></script>
  <script src="vendors/js/magnific-popup.js"></script>
  <script src="resources/js/scripts.js"></script>
@@ -383,36 +409,6 @@
 
   ga('create', 'UA-89699857-1', 'auto');
   ga('send', 'pageview');
- </script>
- <!-- Form Submit Script -->
- <script>
-  function _(id) {
-   return document.getElementById(id);
-  }
-
-  function submitForm() {
-   console.log("This is ok");
-   _("submit-button").disabled = true;
-   //_("status").innerHTML = 'please wait ...';
-   var formdata = new FormData();
-   formdata.append("name", _("name").value);
-   formdata.append("email", _("email").value);
-   formdata.append("subject", _("subject").value);
-   formdata.append("message", _("message").value);
-   var ajax = new XMLHttpRequest();
-   ajax.open("POST", "resources/form/sendEmail.php");
-   ajax.onreadystatechange = function() {
-    if (ajax.readyState == 4 && ajax.status == 200) {
-     if (ajax.responseText == "success") {
-      _("contact-form").innerHTML = '<h2>Thanks ' + _("name").value + ', your message has been sent.</h2>';
-     } else {
-      _("status").innerHTML = ajax.responseText;
-      _("submit-button").disabled = false;
-     }
-    }
-   }
-   ajax.send(formdata);
-  }
  </script>
 </body>
 
