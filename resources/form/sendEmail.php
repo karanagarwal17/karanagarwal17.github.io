@@ -1,43 +1,19 @@
 ﻿<?php
 
-$siteOwnersEmail = 'karanagarwal1702@gmail.com';
-
+$to = 'karanagarwal1702@gmail.com';
 
 if($_POST) {
 
-   $fname = trim(stripslashes($_POST['contactFname']));
-   $lname = trim(stripslashes($_POST['contactLname']));
-   $email = trim(stripslashes($_POST['contactEmail']));
-   $subject = trim(stripslashes($_POST['contactSubject']));
-   $contact_message = trim(stripslashes($_POST['contactMessage']));
-
-   // Check First Name
-	if (strlen($fname) < 2) {
-		$error['fname'] = "Please enter your first name.";
-	}
-	// Check Last Name
-	if (strlen($lname) < 2) {
-		$error['lname'] = "Please enter your last name.";
-	}
-	// Check Email
-	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-		$error['email'] = "Please enter a valid email address.";
-	}
-	// Check Message
-	if (strlen($contact_message) < 15) {
-		$error['message'] = "Please enter your message. It should have at least 15 characters.";
-	}
-   // Subject
-	if ($subject == '') { $subject = "Contact Form Submission"; }
-
-	// Set Name
-	$name = $fname . " " . $lname;
+   $name = trim(stripslashes($_POST['name']));
+   $email = trim(stripslashes($_POST['email']));
+   $subject = trim(stripslashes($_POST['subject']));
+   $msg = trim(stripslashes($_POST['message']));
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
-	$message .= "Email address: " . $email . "<br />";
+   $message = 'Email from: ' . $name . '<br />';
+   $message .= 'Email address: ' . $email . '<br />';
    $message .= "Message: <br />";
-   $message .= $contact_message;
+   $message .= $msg;
    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
 
    // Set From: header
@@ -52,8 +28,8 @@ if($_POST) {
 
    if (!$error) {
 
-      ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+      ini_set("sendmail_from", $to); // for windows server
+      $mail = mail($to, $subject, $message, $headers);
 
 		if ($mail) { echo "OK"; }
       else { echo "Something went wrong. Please try again."; }
