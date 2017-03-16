@@ -611,7 +611,25 @@ header {
 
 #interests {
   background-color: #eee;
+}
 
+.custom-dots {
+  margin: auto auto;
+  padding: auto auto;
+}
+
+.dot {
+  display: inline-block;
+}
+
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  background: #333;
+  margin-right: 5px;
+  display: inline-block;  /*for making them horizontal, if you want vertical then you can use- display: block*/
 }
 
 /* ------------------------------------------------------- */
