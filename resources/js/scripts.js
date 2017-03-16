@@ -274,6 +274,7 @@ $(document).ready(function() {
 
 		$(".owl-carousel").owlCarousel({
       dotsContainer: '#custom-dots',
+      autoHeight: true,
       dots: true,
       items: 1,
       margin: 0,
