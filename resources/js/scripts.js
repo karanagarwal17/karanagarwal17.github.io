@@ -81,6 +81,13 @@ $(document).ready(function(){
       gradient: ["#3498db", "#3498db"]
     }
   });
+  $('.data-c-2').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
   $('.othr-c-1').circleProgress({
     value: 0,
     size: 100,
@@ -195,6 +202,13 @@ $(document).ready(function(){
     }
   });
   $('.data-c-1').circleProgress({
+    value: 0.85,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.data-c-2').circleProgress({
     value: 0.60,
     size: 100,
     fill: {
