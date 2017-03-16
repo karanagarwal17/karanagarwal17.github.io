@@ -624,6 +624,10 @@ header {
   font-size: 400%;
 }
 
+.dot i {
+  cursor: pointer;
+}
+
 .dot:last-of-type {
   margin-right: 0px;
 }
