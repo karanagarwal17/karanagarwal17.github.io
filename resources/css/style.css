@@ -633,14 +633,22 @@ header {
 }
 
 .owl-carousel{
-  width: 40%;
+  width: 50%;
 }
 
-.interests-text h3 {
-  margin: 20px auto;
+.interests-div {
+  background: #ffffff;
+}
+
+.interests-title h3 {
+  padding: 20px 0px 20px 0px;
   text-align: center;
   font-weight: 400;
-  color: #111;
+  color: #444;
+}
+
+.interests-content {
+  padding: 20px 30px 20px 30px;
 }
 
 /* ------------------------------------------------------- */
