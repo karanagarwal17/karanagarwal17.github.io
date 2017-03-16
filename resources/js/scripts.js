@@ -46,6 +46,13 @@ $(document).ready(function(){
       gradient: ["#3498db", "#3498db"]
     }
   });
+  $('.fram-c-3').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
   $('.lib-c-1').circleProgress({
     value: 0,
     size: 100,
@@ -74,7 +81,14 @@ $(document).ready(function(){
       gradient: ["#3498db", "#3498db"]
     }
   });
-  $('.plat-c-1').circleProgress({
+  $('.othr-c-1').circleProgress({
+    value: 0,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.othr-c-2').circleProgress({
     value: 0,
     size: 100,
     fill: {
@@ -107,7 +121,7 @@ $(document).ready(function(){
       /* SKILLS ANIMATION */
 
   $('.lang-c-1').circleProgress({
-    value: 0.75,
+    value: 0.85,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
@@ -115,7 +129,7 @@ $(document).ready(function(){
   });
 
   $('.lang-c-2').circleProgress({
-    value: 0.60,
+    value: 0.75,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
@@ -131,7 +145,7 @@ $(document).ready(function(){
   });
 
   $('.web-c-2').circleProgress({
-    value: 0.80,
+    value: 0.85,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
@@ -139,28 +153,35 @@ $(document).ready(function(){
   });
 
   $('.fram-c-1').circleProgress({
-    value: 0.70,
+    value: 0.75,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
     }
   });
   $('.fram-c-2').circleProgress({
-    value: 0.65,
+    value: 0.70,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
+  $('.fram-c-3').circleProgress({
+    value: 0.60,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
     }
   });
   $('.lib-c-1').circleProgress({
-    value: 0.55,
+    value: 0.70,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
     }
   });
   $('.lib-c-2').circleProgress({
-    value: 0.70,
+    value: 0.55,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
@@ -174,20 +195,26 @@ $(document).ready(function(){
     }
   });
   $('.data-c-1').circleProgress({
-    value: 0.55,
+    value: 0.60,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
     }
   });
-  $('.plat-c-1').circleProgress({
-    value: 0.65,
+  $('.othr-c-1').circleProgress({
+    value: 0.75,
     size: 100,
     fill: {
       gradient: ["#3498db", "#3498db"]
     }
   });
-
+  $('.othr-c-2').circleProgress({
+    value: 0.70,
+    size: 100,
+    fill: {
+      gradient: ["#3498db", "#3498db"]
+    }
+  });
 }, {
 offset: '50%'
 });
