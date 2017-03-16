@@ -632,6 +632,17 @@ header {
   color: #3498db;
 }
 
+.owl-carousel{
+  width: 40%;
+}
+
+.interests-text h3 {
+  margin: 20px auto;
+  text-align: center;
+  font-weight: 400;
+  color: #111;
+}
+
 /* ------------------------------------------------------- */
 /* CONATCT FORM */
 /* ------------------------------------------------------- */
