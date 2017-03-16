@@ -15,6 +15,13 @@
   .myimage {
     margin: 14% 0 14% 10%;
   }
+  .dot {
+    margin-right: 80px;
+    font-size: 350%;
+  }
+  .owl-carousel {
+    width: 60%;
+  }
 }
 
 /* small tablet to big tablets: from 768 to 1023 px */
@@ -39,6 +46,13 @@
   .projects-item .item-wrap .link-icon {
     left: 31%;
     margin-left: 0;
+  }
+  .dot {
+    margin-right: 70px;
+    font-size: 300%;
+  }
+  .owl-carousel {
+    width: 70%;
   }
 }
 
@@ -70,6 +84,13 @@
   }
   .projects-item .projects-item-meta p {
     font-size: 70%;
+  }
+  .dot {
+    margin-right: 40px;
+    font-size: 250%;
+  }
+  .owl-carousel {
+    width: 80%;
   }
 }
 
@@ -111,5 +132,12 @@
   }
   #contact .col {
     padding: 4px;
+  }
+  .dot {
+    margin-right: 15px;
+    font-size: 200%;
+  }
+  .owl-carousel {
+    width: 90%;
   }
 }
