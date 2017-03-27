@@ -656,6 +656,22 @@ header {
   padding: 20px 30px 20px 30px;
 }
 
+.interests-list a:link,
+.interests-list a:visited {
+  border-bottom: none;
+  text-decoration: underline;
+  color: #3498db;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: text-decoration 0.2s, color 0.2s;
+}
+
+.interests-list a:hover,
+.interests-list a:active {
+  text-decoration: none;
+  color: #555;
+}
+
+
 /* ------------------------------------------------------- */
 /* CONATCT FORM */
 /* ------------------------------------------------------- */
