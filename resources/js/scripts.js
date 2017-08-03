@@ -277,19 +277,13 @@ $(document).ready(function() {
       dotsContainer: '#custom-dots',
       autoHeight: true,
       dots: true,
-			//autoplay: true,
-			//autoplayTimeout: 1000,
+			autoplay: true,
+			autoplayTimeout: 1000,
       items: 1,
       margin: 0,
       loop: true
     });
-		//setTimeout(function(){
-		//	owl.trigger('stop.owl.autoplay')
-		//},6000);
-		setTimeout(function(){
-			owl.trigger('refresh.owl.carousel')
-		},2000);
-
+		
 	/*----------------------------------------------------*/
 	/*	contact form
 	------------------------------------------------------*/
