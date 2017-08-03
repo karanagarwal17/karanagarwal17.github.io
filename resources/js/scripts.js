@@ -283,7 +283,11 @@ $(document).ready(function() {
       margin: 0,
       loop: true
     });
-		
+		setTimeout(function(){
+			owl.trigger('stop.owl.autoplay')
+		},7000);
+
+
 	/*----------------------------------------------------*/
 	/*	contact form
 	------------------------------------------------------*/
