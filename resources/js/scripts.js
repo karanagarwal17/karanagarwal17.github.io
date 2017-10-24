@@ -127,7 +127,7 @@ $(document).ready(function() {
 		/* SKILLS ANIMATION */
 
 		$('.lang-c-1').circleProgress({
-			value: 0.85,
+			value: 0.9,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
@@ -135,7 +135,7 @@ $(document).ready(function() {
 		});
 
 		$('.lang-c-2').circleProgress({
-			value: 0.75,
+			value: 0.85,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
@@ -277,50 +277,10 @@ $(document).ready(function() {
       dotsContainer: '#custom-dots',
       autoHeight: true,
       dots: true,
-			autoplay: true,
-			autoplayTimeout: 1000,
+			//autoplay: true,
+			//autoplayTimeout: 1000,
       items: 1,
       margin: 0,
       loop: true
     });
-		setTimeout(function(){
-			owl.trigger('stop.owl.autoplay')
-		},7000);
-
-
-	/*----------------------------------------------------*/
-	/*	contact form
-	------------------------------------------------------*/
-
-	$('form#contact-form input.submit').on('click', function() {
-		$('#image-loader').fadeIn();
-		var contactname = $('#contact-form #name').val();
-		var contactEmail = $('#contact-form #email').val();
-		var contactSubject = $('#contact-form #subject').val();
-		var contactMessage = $('#contact-form #message').val();
-		var data = 'contactname=' + contactname +
-			'&contactEmail=' + contactEmail + '&contactSubject=' + contactSubject +
-			'&contactMessage=' + contactMessage;
-		$.ajax({
-			type: "POST",
-			url: "../form/sendEmail.php",
-			data: data,
-			success: function(msg) {
-				// Message was sent
-				if (msg == 'OK') {
-					$('#image-loader').fadeOut();
-					$('#message-warning').hide();
-					$('#contactForm').fadeOut();
-					$('#message-success').fadeIn();
-				}
-				// There was an error
-				else {
-					$('#image-loader').fadeOut();
-					$('#message-warning').html(msg);
-					$('#message-warning').fadeIn();
-				}
-			}
-		});
-		return false;
-	});
 });
