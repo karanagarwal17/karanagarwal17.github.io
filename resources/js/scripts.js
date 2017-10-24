@@ -16,7 +16,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.web-c-1').circleProgress({
+	$('.des-c-1').circleProgress({
 		value: 0,
 		size: 100,
 		fill: {
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.web-c-2').circleProgress({
+	$('.des-c-2').circleProgress({
 		value: 0,
 		size: 100,
 		fill: {
@@ -32,21 +32,37 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.fram-c-1').circleProgress({
+	$('.front-c-1').circleProgress({
 		value: 0,
 		size: 100,
 		fill: {
 			gradient: ["#3498db", "#3498db"]
 		}
 	});
-	$('.fram-c-2').circleProgress({
+
+	$('.front-c-2').circleProgress({
 		value: 0,
 		size: 100,
 		fill: {
 			gradient: ["#3498db", "#3498db"]
 		}
 	});
-	$('.fram-c-3').circleProgress({
+
+	$('.back-c-1').circleProgress({
+		value: 0,
+		size: 100,
+		fill: {
+			gradient: ["#3498db", "#3498db"]
+		}
+	});
+	$('.back-c-2').circleProgress({
+		value: 0,
+		size: 100,
+		fill: {
+			gradient: ["#3498db", "#3498db"]
+		}
+	});
+	$('.back-c-3').circleProgress({
 		value: 0,
 		size: 100,
 		fill: {
@@ -74,28 +90,15 @@ $(document).ready(function() {
 			gradient: ["#3498db", "#3498db"]
 		}
 	});
-	$('.data-c-1').circleProgress({
+
+	$('.tool-c-1').circleProgress({
 		value: 0,
 		size: 100,
 		fill: {
 			gradient: ["#3498db", "#3498db"]
 		}
 	});
-	$('.data-c-2').circleProgress({
-		value: 0,
-		size: 100,
-		fill: {
-			gradient: ["#3498db", "#3498db"]
-		}
-	});
-	$('.othr-c-1').circleProgress({
-		value: 0,
-		size: 100,
-		fill: {
-			gradient: ["#3498db", "#3498db"]
-		}
-	});
-	$('.othr-c-2').circleProgress({
+	$('.tool-c-2').circleProgress({
 		value: 0,
 		size: 100,
 		fill: {
@@ -142,7 +145,7 @@ $(document).ready(function() {
 			}
 		});
 
-		$('.web-c-1').circleProgress({
+		$('.des-c-1').circleProgress({
 			value: 0.90,
 			size: 100,
 			fill: {
@@ -150,79 +153,82 @@ $(document).ready(function() {
 			}
 		});
 
-		$('.web-c-2').circleProgress({
-			value: 0.85,
+		$('.des-c-2').circleProgress({
+			value: 0.90,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
 			}
 		});
 
-		$('.fram-c-1').circleProgress({
+		$('.front-c-1').circleProgress({
 			value: 0.75,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
 			}
 		});
-		$('.fram-c-2').circleProgress({
+
+		$('.front-c-2').circleProgress({
 			value: 0.70,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
 			}
 		});
-		$('.fram-c-3').circleProgress({
-			value: 0.60,
+
+		$('.back-c-1').circleProgress({
+			value: 0.80,
+			size: 100,
+			fill: {
+				gradient: ["#3498db", "#3498db"]
+			}
+		});
+		$('.back-c-2').circleProgress({
+			value: 0.80,
+			size: 100,
+			fill: {
+				gradient: ["#3498db", "#3498db"]
+			}
+		});
+		$('.back-c-3').circleProgress({
+			value: 0.70,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
 			}
 		});
 		$('.lib-c-1').circleProgress({
-			value: 0.70,
-			size: 100,
-			fill: {
-				gradient: ["#3498db", "#3498db"]
-			}
-		});
-		$('.lib-c-2').circleProgress({
-			value: 0.55,
-			size: 100,
-			fill: {
-				gradient: ["#3498db", "#3498db"]
-			}
-		});
-		$('.lib-c-3').circleProgress({
-			value: 0.65,
-			size: 100,
-			fill: {
-				gradient: ["#3498db", "#3498db"]
-			}
-		});
-		$('.data-c-1').circleProgress({
-			value: 0.85,
-			size: 100,
-			fill: {
-				gradient: ["#3498db", "#3498db"]
-			}
-		});
-		$('.data-c-2').circleProgress({
 			value: 0.60,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
 			}
 		});
-		$('.othr-c-1').circleProgress({
-			value: 0.75,
+		$('.lib-c-2').circleProgress({
+			value: 0.80,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
 			}
 		});
-		$('.othr-c-2').circleProgress({
+		$('.lib-c-3').circleProgress({
+			value: 0.60,
+			size: 100,
+			fill: {
+				gradient: ["#3498db", "#3498db"]
+			}
+		});
+
+		$('.tool-c-1').circleProgress({
 			value: 0.70,
+			size: 100,
+			fill: {
+				gradient: ["#3498db", "#3498db"]
+			}
+		});
+		$('.tool-c-2').circleProgress({
+			value: 0.80,
 			size: 100,
 			fill: {
 				gradient: ["#3498db", "#3498db"]
